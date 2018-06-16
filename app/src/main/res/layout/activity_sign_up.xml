@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signupbg"
+    tools:context="com.abhishekkansal.rhea_final.SignUp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_SU_name"
+        android:text="Name:"
+        android:textColor="#000"
+        android:layout_margin="10sp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_SU_email"
+        android:textColor="#000"
+        android:text="E-mail:"
+        android:layout_margin="10sp"
+        android:textSize="20sp"
+        android:layout_below="@id/tv_SU_name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_SU_course"
+        android:textColor="#000"
+        android:text="Course:"
+        android:layout_below="@id/tv_SU_email"
+        android:layout_margin="10sp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:id="@+id/tv_SU_sem"
+        android:text="Sem:"
+        android:layout_below="@id/tv_SU_course"
+        android:layout_margin="10sp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:id="@+id/tv_SU_password"
+        android:text="Password:"
+        android:layout_below="@id/tv_SU_sem"
+        android:layout_margin="10sp"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:id="@+id/et_SU_name"
+        android:layout_toRightOf="@id/tv_SU_password"
+        android:layout_marginRight="10sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:id="@+id/et_SU_email"
+        android:layout_toRightOf="@id/tv_SU_password"
+        android:layout_below="@id/et_SU_name"
+        android:layout_marginRight="10sp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_below="@id/et_SU_email"
+        android:layout_marginRight="10sp"
+        android:layout_toRightOf="@id/tv_SU_password"
+        android:id="@+id/sp_SU_course"
+        android:layout_marginTop="12sp"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/sp_SU_course"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/tv_SU_password"
+        android:layout_marginTop="20sp"
+        android:id="@+id/RG_SU_sem">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I"
+            android:id="@+id/rb_SU_1"
+            >
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="II"
+            android:id="@+id/rb_SU_2"
+            >
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_SU_3"
+            android:text="III">
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_SU_4"
+            android:text="IV">
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_SU_5"
+            android:text="V">
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_SU_6"
+            android:text="VI">
+        </RadioButton>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_SU_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_SU_sem"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:layout_marginRight="10sp"
+        android:layout_toRightOf="@id/tv_SU_password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_SU_signup"
+        android:background="#888"
+        android:textColor="#000"
+        android:text="Sign up"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/tv_SU_password"
+        android:layout_marginTop="30sp"
+        />
+
+
+</RelativeLayout>

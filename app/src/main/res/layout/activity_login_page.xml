@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin"
+    tools:context="com.abhishekkansal.rhea_final.LoginPage">
+
+    <TextView
+        android:id="@+id/tv_LP_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:text="R.H.E.A. is an app which provides video tutorials to students according to their Course and Semester"
+        android:textAlignment="center"
+       android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_LP_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_LP_description"
+        android:layout_margin="15sp"
+        android:textColor="#FFF"
+        android:hint="Email"
+        android:inputType="text"
+        android:paddingLeft="10sp"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_LP_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_LP_username"
+        android:textColor="#FFF"
+        android:layout_margin="15sp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10sp"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/bt_LP_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_LP_password"
+        android:layout_centerInParent="true"
+        android:layout_margin="15sp"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="Login"
+        android:theme="@style/Widget.AppCompat.Button.Colored"
+        tools:theme="@style/Base.V21.Theme.AppCompat.Light" />
+
+    <Button
+        android:id="@+id/bt_LP_signup"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_LP_login"
+        android:layout_marginTop="2sp"
+        android:layout_toRightOf="@id/tv_LP_already_a_member"
+        android:paddingLeft="2sp"
+        android:text="Sign Up"
+        android:textColor="#FFF"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/tv_LP_already_a_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_LP_login"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="15sp"
+        android:textColor="#FFFFFF"
+        android:text="Not a member ?"
+        android:textSize="18sp" />
+
+</RelativeLayout>
